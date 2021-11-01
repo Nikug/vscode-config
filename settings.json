@@ -42,108 +42,134 @@
     "vim.normalModeKeyBindings": [
         // Window controls (w) 
         {
+            // Move focus right
             "before": ["<leader>", "l"],
             "after": ["<C-w>", "l"]
         },
         {
+            // Move focus left
             "before": ["<leader>", "h"],
             "after": ["<C-w>", "h"]
         },
         {
+            // Move focus down
             "before": ["<leader>", "j"],
             "after": ["<C-w>", "j"]
         },
         {
+            // Move focus up
             "before": ["<leader>", "k"],
             "after": ["<C-w>", "k"]
         },
         {
+            // Split vertical
             "before": ["<leader>", "w", "v"],
             "after": ["<C-w>", "v"]
         },
         {
+            // Split horizontal
             "before": ["<leader>", "w", "s"],
             "after": ["<C-w>", "s"]
         },
         {
+            // Close window
             "before": ["<leader>", "w", "k"],
-            "after": ["<C-w>", "q"]
+            "commands": ["workbench.action.closeEditorsInGroup"]
         },
         // Tab controls (t)
         {
+            // New empty tab
             "before": ["<Leader>", "t", "n"],
             "commands": [":tabnew"]
         },
         {
+            // Move to right tab
             "before": ["<Leader>", "t", "l"],
             "commands": [":tabnext"]
         },
         {
+            // Move to left tab
             "before": ["<Leader>", "t", "h"],
             "commands": [":tabprev"]
         },
         {
+            // Close all other tabs in window
             "before": ["<Leader>", "t", "o"],
             "commands": [":tabo"]
         },
         {
+            // Close tab
             "before": ["<leader>", "t", "k"],
-            "after": ["<C-w>", "q"]
+            "commands": ["workbench.action.closeActiveEditor"]
         },
         {
+            // Move tab to right window
             "before": ["<Leader>", "t", "L"],
             "commands": ["workbench.action.moveEditorToNextGroup"]
         },
         {
+            // Move tab to left window
             "before": ["<Leader>", "t", "H"],
             "commands": ["workbench.action.moveEditorToPreviousGroup"]
         },
         // Command controls (leader)
         {
+            // Open file
             "before": ["<leader>", "<leader>"],
             "commands": ["workbench.action.quickOpen"]
         },
         {
+            // Run command
             "before": ["<leader>", ":"],
             "commands": ["workbench.action.showCommands"]
         },
         {
+            // Find symbol
             "before": ["<leader>", ";"],
             "commands": ["workbench.action.showAllSymbols"]
         },
         // Toggling view stuff (v)
         {
+            // Toggle sidebar
             "before": ["<leader>", "v", "s"],
             "commands": ["workbench.action.toggleSidebarVisibility"]
         },
         {
+            // Toggle panel (terminal)
             "before": ["<leader>", "v", "p"],
             "commands": ["workbench.action.togglePanel"]
         },
         // Files (f)
         {
+            // Show file in sidebar
             "before": ["<leader>", "f", "v"],
             "commands": ["workbench.files.action.showActiveFileInExplorer"]
         },
         {
+            // Save file
             "before": ["<leader>", "f", "s"],
             "commands": ["workbench.action.files.save"] 
         },
         {
+            // Save file as
             "before": ["<leader>", "f", "S"],
             "commands": ["workbench.action.files.saveAs"] 
         },
         {
+            // New empty file
             "before": ["<leader>", "f", "n"],
             "commands": ["workbench.action.files.newUntitledFile"] 
         },
         // Create (c)
         {
+            // New empty file
             "before": ["<leader>", "c", "f"],
             "commands": ["workbench.action.files.newUntitledFile"] 
         },
     ],
-    "workbench.colorTheme": "One Dark Pro Darker",
     "editor.lineNumbers": "relative",
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
 } 
