@@ -1,0 +1,149 @@
+{
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": true,
+    "terminal.integrated.scrollback": 5000,
+    "editor.fontSize": 17,
+    "editor.tabSize": 2,
+    "workbench.editor.enablePreview": false,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "emmet.extensionsPath": [
+        "C:/Users/nikgro/Documents/repos/emmet"
+    ],
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "typescript": "typescriptreact"
+    },
+    "emmet.excludeLanguages": [
+        "markdown"
+    ],
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.showSuggestionsAsSnippets": true,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.profiles.windows": {
+        "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe (migrated)": {
+            "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+            "args": []
+        }
+    },
+    "vim.sneak": true,
+    "vim.sneakReplacesF": true,
+    "vim.useSystemClipboard": true,
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindings": [
+        // Window controls (w) 
+        {
+            "before": ["<leader>", "l"],
+            "after": ["<C-w>", "l"]
+        },
+        {
+            "before": ["<leader>", "h"],
+            "after": ["<C-w>", "h"]
+        },
+        {
+            "before": ["<leader>", "j"],
+            "after": ["<C-w>", "j"]
+        },
+        {
+            "before": ["<leader>", "k"],
+            "after": ["<C-w>", "k"]
+        },
+        {
+            "before": ["<leader>", "w", "v"],
+            "after": ["<C-w>", "v"]
+        },
+        {
+            "before": ["<leader>", "w", "s"],
+            "after": ["<C-w>", "s"]
+        },
+        {
+            "before": ["<leader>", "w", "k"],
+            "after": ["<C-w>", "q"]
+        },
+        // Tab controls (t)
+        {
+            "before": ["<Leader>", "t", "n"],
+            "commands": [":tabnew"]
+        },
+        {
+            "before": ["<Leader>", "t", "l"],
+            "commands": [":tabnext"]
+        },
+        {
+            "before": ["<Leader>", "t", "h"],
+            "commands": [":tabprev"]
+        },
+        {
+            "before": ["<Leader>", "t", "o"],
+            "commands": [":tabo"]
+        },
+        {
+            "before": ["<leader>", "t", "k"],
+            "after": ["<C-w>", "q"]
+        },
+        {
+            "before": ["<Leader>", "t", "L"],
+            "commands": ["workbench.action.moveEditorToNextGroup"]
+        },
+        {
+            "before": ["<Leader>", "t", "H"],
+            "commands": ["workbench.action.moveEditorToPreviousGroup"]
+        },
+        // Command controls (leader)
+        {
+            "before": ["<leader>", "<leader>"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            "before": ["<leader>", ":"],
+            "commands": ["workbench.action.showCommands"]
+        },
+        {
+            "before": ["<leader>", ";"],
+            "commands": ["workbench.action.showAllSymbols"]
+        },
+        // Toggling view stuff (v)
+        {
+            "before": ["<leader>", "v", "s"],
+            "commands": ["workbench.action.toggleSidebarVisibility"]
+        },
+        {
+            "before": ["<leader>", "v", "p"],
+            "commands": ["workbench.action.togglePanel"]
+        },
+        // Files (f)
+        {
+            "before": ["<leader>", "f", "v"],
+            "commands": ["workbench.files.action.showActiveFileInExplorer"]
+        },
+        {
+            "before": ["<leader>", "f", "s"],
+            "commands": ["workbench.action.files.save"] 
+        },
+        {
+            "before": ["<leader>", "f", "S"],
+            "commands": ["workbench.action.files.saveAs"] 
+        },
+        {
+            "before": ["<leader>", "f", "n"],
+            "commands": ["workbench.action.files.newUntitledFile"] 
+        },
+        // Create (c)
+        {
+            "before": ["<leader>", "c", "f"],
+            "commands": ["workbench.action.files.newUntitledFile"] 
+        },
+    ],
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "editor.lineNumbers": "relative",
+    "editor.minimap.enabled": false
+} 
