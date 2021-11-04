@@ -196,10 +196,23 @@
             "before": ["<leader>", "c", "R"],
             "commands": ["editor.action.rename"] 
         },
+        // Kill ring
+        {
+            // Cycle kill ring
+            "before": ["P"],
+            "commands": ["clipring.pasteRingItem"]
+        },
+        {
+            // Select from kill ring
+            "before": ["<leader>", "p"],
+            "commands": ["clipring.selectAndPasteRingItem"]
+        }
     ],
+    "clipring.maxRingItems": 40,
     "editor.lineNumbers": "relative",
     "editor.minimap.enabled": false,
     "workbench.colorTheme": "One Dark Pro Darker",
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "vim.timeout": 30000
 } 
