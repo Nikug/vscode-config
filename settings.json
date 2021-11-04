@@ -160,11 +160,41 @@
             "before": ["<leader>", "f", "n"],
             "commands": ["workbench.action.files.newUntitledFile"] 
         },
-        // Create (c)
+        // Code (c)
         {
-            // New empty file
-            "before": ["<leader>", "c", "f"],
-            "commands": ["workbench.action.files.newUntitledFile"] 
+            // Show documentation of symbol 
+            "before": ["<leader>", "c", "h"],
+            "commands": ["editor.action.showHover"] 
+        },
+        {
+            // Code action 
+            "before": ["<leader>", "c", "a"],
+            "commands": ["editor.action.quickFix"] 
+        },
+        {
+            // Go to symbol definition 
+            "before": ["<leader>", "c", "d"],
+            "commands": ["editor.action.revealDefinition"] 
+        },
+        {
+            // Go to symbol references 
+            "before": ["<leader>", "c", "r"],
+            "commands": ["editor.action.goToReferences"] 
+        },
+        {
+            // Go to next symbol highlight 
+            "before": ["<leader>", "c", "n"],
+            "commands": ["editor.action.wordHighlight.next"] 
+        },
+        {
+            // Go to previous symbol highlight 
+            "before": ["<leader>", "c", "N"],
+            "commands": ["editor.action.wordHighlight.prev"] 
+        },
+        {
+            // Rename symbol 
+            "before": ["<leader>", "c", "R"],
+            "commands": ["editor.action.rename"] 
         },
     ],
     "editor.lineNumbers": "relative",
