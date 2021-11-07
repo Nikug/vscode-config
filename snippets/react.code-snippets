@@ -19,9 +19,8 @@
 	"React functional component": {
 		"scope": "typescriptreact",
 		"prefix": "rfc",
+		"description": "Create React functional component",
 		"body":[
-			"import React from 'react'",
-			"",
 			"interface Props {}",
 			"",
 			"export const ${1:component} = (props: Props) => {",
@@ -29,6 +28,14 @@
 			"\treturn <div></div>",
 			"}"
 		],
-		"description": "Create React functional component"
+	},
+
+	"React hook use translation": {
+		"scope": "react",
+		"prefix": "uset",
+		"description": "Use translation hook",
+		"body": [
+			"const { t } = useTranslation();"
+		]
 	}
 }
