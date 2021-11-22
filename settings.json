@@ -196,6 +196,20 @@
             "before": ["<leader>", "c", "R"],
             "commands": ["editor.action.rename"] 
         },
+        {
+            // Toggle comment 
+            "before": ["<leader>", "c", "c"],
+            "commands": ["editor.action.commentLine"] 
+        },
+        // Navigation / Go to (g)
+        {
+            "before": ["<leader>", "g", "e"],
+            "commands": ["editor.action.marker.next"]
+        },
+        {
+            "before": ["<leader>", "g", "E"],
+            "commands": ["editor.action.marker.prev"]
+        },
         // Kill ring
         {
             // Cycle kill ring
@@ -207,6 +221,14 @@
             "before": ["<leader>", "p"],
             "commands": ["clipring.selectAndPasteRingItem"]
         }
+    ],
+    "vim.visualModeKeyBindings": [
+        // Code (c)
+        {
+            // Toggle comment 
+            "before": ["<leader>", "c", "c"],
+            "commands": ["editor.action.commentLine"] 
+        },
     ],
     "clipring.maxRingItems": 40,
     "editor.lineNumbers": "relative",
