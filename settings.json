@@ -219,17 +219,6 @@
         {
             "before": ["<leader>", "g", "E"],
             "commands": ["editor.action.marker.prev"]
-        },
-        // Kill ring
-        {
-            // Cycle kill ring
-            "before": ["P"],
-            "commands": ["clipring.pasteRingItem"]
-        },
-        {
-            // Select from kill ring
-            "before": ["<leader>", "p"],
-            "commands": ["clipring.selectAndPasteRingItem"]
         }
     ],
     "vim.visualModeKeyBindings": [
@@ -240,7 +229,6 @@
             "commands": ["editor.action.commentLine"] 
         },
     ],
-    "clipring.maxRingItems": 40,
     "editor.lineNumbers": "relative",
     "editor.minimap.enabled": false,
     "workbench.colorTheme": "One Dark Pro Darker",
@@ -249,6 +237,7 @@
     "vim.timeout": 30000,
     "mssql.connections": [],
     "sqltools.highlightQuery": false,
+    "liveServer.settings.fullReload": true,
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
