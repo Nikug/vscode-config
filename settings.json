@@ -182,6 +182,16 @@
             "commands": ["editor.action.goToReferences"] 
         },
         {
+            // Go to symbol type definition 
+            "before": ["<leader>", "c", "t"],
+            "commands": ["editor.action.goToTypeDefinition"] 
+        },
+        {
+            // Peek symbol type definition 
+            "before": ["<leader>", "c", "T"],
+            "commands": ["editor.action.peekTypeDefinition"] 
+        },
+        {
             // Go to next symbol highlight 
             "before": ["<leader>", "c", "n"],
             "commands": ["editor.action.wordHighlight.next"] 
@@ -236,5 +246,10 @@
     "workbench.colorTheme": "One Dark Pro Darker",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "vim.timeout": 30000
+    "vim.timeout": 30000,
+    "mssql.connections": [],
+    "sqltools.highlightQuery": false,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 } 
