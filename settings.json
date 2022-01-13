@@ -240,5 +240,7 @@
     "liveServer.settings.fullReload": true,
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "editor.bracketPairColorization.enabled": true,
+    "sqltools.useNodeRuntime": true
 } 
