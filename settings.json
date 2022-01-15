@@ -177,6 +177,11 @@
             "commands": ["editor.action.revealDefinition"] 
         },
         {
+            // Go to symbol implementation 
+            "before": ["<leader>", "c", "i"],
+            "commands": ["editor.action.goToImplementation"] 
+        },
+        {
             // Go to symbol references 
             "before": ["<leader>", "c", "r"],
             "commands": ["editor.action.goToReferences"] 
