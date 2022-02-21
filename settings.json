@@ -152,6 +152,11 @@
       "commands": ["workbench.action.files.saveAs"]
     },
     {
+      // Save all files
+      "before": ["<leader>", "f", "a"],
+      "commands": ["workbench.action.files.saveAll"]
+    },
+    {
       // New empty file
       "before": ["<leader>", "f", "n"],
       "commands": ["workbench.action.files.newUntitledFile"]
