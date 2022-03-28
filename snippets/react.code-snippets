@@ -33,9 +33,18 @@
 	"React hook use translation": {
 		"scope": "react,typescriptreact",
 		"prefix": "uset",
-		"description": "Use translation hook",
+		"description": "UseTranslation hook",
 		"body": [
-			"const { t } = useTranslation();"
+			"const { t } = useTranslation$0();"
+		]
+	},
+
+	"React hook use navigate": {
+		"scope": "react,typescriptreact",
+		"prefix": "usen",
+		"description": "UseNavigate hook",
+		"body": [
+			"const navigate = useNavigate$0();"
 		]
 	}
 }
