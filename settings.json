@@ -442,14 +442,17 @@
       ]
     },
     {
-      "before": [
-        "<leader>",
-        "g",
-        "E"
-      ],
-      "commands": [
-        "editor.action.marker.prev"
-      ]
+      "before": ["<leader>", "g", "E"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    // Select (s)
+    {
+      "before": ["<leader>", "s", "a"],
+      "after": ["g", "g", "v", "G"]
+    },
+    {
+      "before": ["<leader>", "s", "A"],
+      "after": ["m", "m", "g", "g", "v", "G", "y", "'", "m"]
     }
   ],
   "vim.visualModeKeyBindings": [
@@ -468,19 +471,14 @@
   ],
   "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
+  "editor.fontLigatures": true,
   "workbench.colorTheme": "Palenight Theme",
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "vim.timeout": 30000,
-  "mssql.connections": [],
-  "sqltools.highlightQuery": false,
   "liveServer.settings.fullReload": true,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.bracketPairColorization.enabled": true,
-  "sqltools.useNodeRuntime": true,
-  "vscode_custom_css.imports": [
-    "file:///C:/Users/nikgro/.vscode/extensions/victoriadrake.kabukicho-0.0.6/lights-on.css"
-  ]
+  "editor.bracketPairColorization.enabled": true
 }
