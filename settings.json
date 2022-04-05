@@ -16,16 +16,11 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "emmet.extensionsPath": [
-    "C:/Users/nikgro/Documents/repos/emmet"
-  ],
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
     "typescript": "typescriptreact"
   },
-  "emmet.excludeLanguages": [
-    "markdown"
-  ],
+  "emmet.excludeLanguages": ["markdown"],
   "emmet.triggerExpansionOnTab": true,
   "emmet.showSuggestionsAsSnippets": true,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
@@ -43,403 +38,188 @@
     // Window controls (w)
     {
       // Move focus right
-      "before": [
-        "<leader>",
-        "l"
-      ],
-      "after": [
-        "<C-w>",
-        "l"
-      ]
+      "before": ["<leader>", "l"],
+      "after": ["<C-w>", "l"]
     },
     {
       // Move focus left
-      "before": [
-        "<leader>",
-        "h"
-      ],
-      "after": [
-        "<C-w>",
-        "h"
-      ]
+      "before": ["<leader>", "h"],
+      "after": ["<C-w>", "h"]
     },
     {
       // Move focus down
-      "before": [
-        "<leader>",
-        "j"
-      ],
-      "after": [
-        "<C-w>",
-        "j"
-      ]
+      "before": ["<leader>", "j"],
+      "after": ["<C-w>", "j"]
     },
     {
       // Move focus up
-      "before": [
-        "<leader>",
-        "k"
-      ],
-      "after": [
-        "<C-w>",
-        "k"
-      ]
+      "before": ["<leader>", "k"],
+      "after": ["<C-w>", "k"]
     },
     {
       // Split vertical
-      "before": [
-        "<leader>",
-        "w",
-        "v"
-      ],
-      "after": [
-        "<C-w>",
-        "v"
-      ]
+      "before": ["<leader>", "w", "v"],
+      "after": ["<C-w>", "v"]
     },
     {
       // Split horizontal
-      "before": [
-        "<leader>",
-        "w",
-        "s"
-      ],
-      "after": [
-        "<C-w>",
-        "s"
-      ]
+      "before": ["<leader>", "w", "s"],
+      "after": ["<C-w>", "s"]
     },
     {
       // Close window
-      "before": [
-        "<leader>",
-        "w",
-        "k"
-      ],
-      "commands": [
-        "workbench.action.closeEditorsInGroup"
-      ]
+      "before": ["<leader>", "w", "k"],
+      "commands": ["workbench.action.closeEditorsInGroup"]
     },
     // Tab controls (t)
     {
       // New empty tab
-      "before": [
-        "<Leader>",
-        "t",
-        "n"
-      ],
-      "commands": [
-        ":tabnew"
-      ]
+      "before": ["<Leader>", "t", "n"],
+      "commands": [":tabnew"]
     },
     {
       // Move to right tab
-      "before": [
-        "<Leader>",
-        "t",
-        "l"
-      ],
-      "commands": [
-        ":tabnext"
-      ]
+      "before": ["<Leader>", "t", "l"],
+      "commands": [":tabnext"]
     },
     {
       // Move to left tab
-      "before": [
-        "<Leader>",
-        "t",
-        "h"
-      ],
-      "commands": [
-        ":tabprev"
-      ]
+      "before": ["<Leader>", "t", "h"],
+      "commands": [":tabprev"]
     },
     {
       // Close all other tabs in window
-      "before": [
-        "<Leader>",
-        "t",
-        "o"
-      ],
-      "commands": [
-        ":tabo"
-      ]
+      "before": ["<Leader>", "t", "o"],
+      "commands": [":tabo"]
     },
     {
       // Close tab
-      "before": [
-        "<leader>",
-        "t",
-        "k"
-      ],
-      "commands": [
-        "workbench.action.closeActiveEditor"
-      ]
+      "before": ["<leader>", "t", "k"],
+      "commands": ["workbench.action.closeActiveEditor"]
     },
     {
       // Move tab to right window
-      "before": [
-        "<Leader>",
-        "t",
-        "L"
-      ],
-      "commands": [
-        "workbench.action.moveEditorToNextGroup"
-      ]
+      "before": ["<Leader>", "t", "L"],
+      "commands": ["workbench.action.moveEditorToNextGroup"]
     },
     {
       // Move tab to left window
-      "before": [
-        "<Leader>",
-        "t",
-        "H"
-      ],
-      "commands": [
-        "workbench.action.moveEditorToPreviousGroup"
-      ]
+      "before": ["<Leader>", "t", "H"],
+      "commands": ["workbench.action.moveEditorToPreviousGroup"]
     },
     // Command controls (leader)
     {
       // Open file
-      "before": [
-        "<leader>",
-        "<leader>"
-      ],
-      "commands": [
-        "workbench.action.quickOpen"
-      ]
+      "before": ["<leader>", "<leader>"],
+      "commands": ["workbench.action.quickOpen"]
     },
     {
       // Run command
-      "before": [
-        "<leader>",
-        ":"
-      ],
-      "commands": [
-        "workbench.action.showCommands"
-      ]
+      "before": ["<leader>", ":"],
+      "commands": ["workbench.action.showCommands"]
     },
     {
       // Find symbol
-      "before": [
-        "<leader>",
-        ";"
-      ],
-      "commands": [
-        "workbench.action.showAllSymbols"
-      ]
+      "before": ["<leader>", ";"],
+      "commands": ["workbench.action.showAllSymbols"]
     },
     // Toggling view stuff (v)
     {
       // Toggle sidebar
-      "before": [
-        "<leader>",
-        "v",
-        "s"
-      ],
-      "commands": [
-        "workbench.action.toggleSidebarVisibility"
-      ]
+      "before": ["<leader>", "v", "s"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
     },
     {
       // Toggle panel (terminal)
-      "before": [
-        "<leader>",
-        "v",
-        "p"
-      ],
-      "commands": [
-        "workbench.action.togglePanel"
-      ]
+      "before": ["<leader>", "v", "p"],
+      "commands": ["workbench.action.togglePanel"]
     },
     // Files (f)
     {
       // Show file in sidebar
-      "before": [
-        "<leader>",
-        "f",
-        "v"
-      ],
-      "commands": [
-        "workbench.files.action.showActiveFileInExplorer"
-      ]
+      "before": ["<leader>", "f", "v"],
+      "commands": ["workbench.files.action.showActiveFileInExplorer"]
     },
     {
       // Save file
-      "before": [
-        "<leader>",
-        "f",
-        "s"
-      ],
-      "commands": [
-        "workbench.action.files.save"
-      ]
+      "before": ["<leader>", "f", "s"],
+      "commands": ["workbench.action.files.save"]
     },
     {
       // Save file as
-      "before": [
-        "<leader>",
-        "f",
-        "S"
-      ],
-      "commands": [
-        "workbench.action.files.saveAs"
-      ]
+      "before": ["<leader>", "f", "S"],
+      "commands": ["workbench.action.files.saveAs"]
     },
     {
       // Save all files
-      "before": [
-        "<leader>",
-        "f",
-        "a"
-      ],
-      "commands": [
-        "workbench.action.files.saveAll"
-      ]
+      "before": ["<leader>", "f", "a"],
+      "commands": ["workbench.action.files.saveAll"]
     },
     {
       // New empty file
-      "before": [
-        "<leader>",
-        "f",
-        "n"
-      ],
-      "commands": [
-        "workbench.action.files.newUntitledFile"
-      ]
+      "before": ["<leader>", "f", "n"],
+      "commands": ["workbench.action.files.newUntitledFile"]
     },
     // Code (c)
     {
       // Show documentation of symbol
-      "before": [
-        "<leader>",
-        "c",
-        "h"
-      ],
-      "commands": [
-        "editor.action.showHover"
-      ]
+      "before": ["<leader>", "c", "h"],
+      "commands": ["editor.action.showHover"]
     },
     {
       // Code action
-      "before": [
-        "<leader>",
-        "c",
-        "a"
-      ],
-      "commands": [
-        "editor.action.quickFix"
-      ]
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
     },
     {
       // Go to symbol definition
-      "before": [
-        "<leader>",
-        "c",
-        "d"
-      ],
-      "commands": [
-        "editor.action.revealDefinition"
-      ]
+      "before": ["<leader>", "c", "d"],
+      "commands": ["editor.action.revealDefinition"]
     },
     {
       // Go to symbol implementation
-      "before": [
-        "<leader>",
-        "c",
-        "i"
-      ],
-      "commands": [
-        "editor.action.goToImplementation"
-      ]
+      "before": ["<leader>", "c", "i"],
+      "commands": ["editor.action.goToImplementation"]
     },
     {
       // Go to symbol references
-      "before": [
-        "<leader>",
-        "c",
-        "r"
-      ],
-      "commands": [
-        "editor.action.goToReferences"
-      ]
+      "before": ["<leader>", "c", "r"],
+      "commands": ["editor.action.goToReferences"]
     },
     {
       // Go to symbol type definition
-      "before": [
-        "<leader>",
-        "c",
-        "t"
-      ],
-      "commands": [
-        "editor.action.goToTypeDefinition"
-      ]
+      "before": ["<leader>", "c", "t"],
+      "commands": ["editor.action.goToTypeDefinition"]
     },
     {
       // Peek symbol type definition
-      "before": [
-        "<leader>",
-        "c",
-        "T"
-      ],
-      "commands": [
-        "editor.action.peekTypeDefinition"
-      ]
+      "before": ["<leader>", "c", "T"],
+      "commands": ["editor.action.peekTypeDefinition"]
     },
     {
       // Go to next symbol highlight
-      "before": [
-        "<leader>",
-        "c",
-        "n"
-      ],
-      "commands": [
-        "editor.action.wordHighlight.next"
-      ]
+      "before": ["<leader>", "c", "n"],
+      "commands": ["editor.action.wordHighlight.next"]
     },
     {
       // Go to previous symbol highlight
-      "before": [
-        "<leader>",
-        "c",
-        "N"
-      ],
-      "commands": [
-        "editor.action.wordHighlight.prev"
-      ]
+      "before": ["<leader>", "c", "N"],
+      "commands": ["editor.action.wordHighlight.prev"]
     },
     {
       // Rename symbol
-      "before": [
-        "<leader>",
-        "c",
-        "R"
-      ],
-      "commands": [
-        "editor.action.rename"
-      ]
+      "before": ["<leader>", "c", "R"],
+      "commands": ["editor.action.rename"]
     },
     {
       // Toggle comment
-      "before": [
-        "<leader>",
-        "c",
-        "c"
-      ],
-      "commands": [
-        "editor.action.commentLine"
-      ]
+      "before": ["<leader>", "c", "c"],
+      "commands": ["editor.action.commentLine"]
     },
     // Navigation / Go to (g)
     {
-      "before": [
-        "<leader>",
-        "g",
-        "e"
-      ],
-      "commands": [
-        "editor.action.marker.next"
-      ]
+      "before": ["<leader>", "g", "e"],
+      "commands": ["editor.action.marker.next"]
     },
     {
       "before": ["<leader>", "g", "E"],
@@ -459,19 +239,15 @@
     // Code (c)
     {
       // Toggle comment
-      "before": [
-        "<leader>",
-        "c",
-        "c"
-      ],
-      "commands": [
-        "editor.action.commentLine"
-      ]
+      "before": ["<leader>", "c", "c"],
+      "commands": ["editor.action.commentLine"]
     }
   ],
-  "editor.lineNumbers": "relative",
+  "editor.lineNumbers": "on",
+  "editor.scrollBeyondLastLine": false,
   "editor.minimap.enabled": false,
   "editor.fontLigatures": true,
+  "editor.peekWidgetDefaultFocus": "tree",
   "workbench.colorTheme": "Palenight Theme",
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -481,5 +257,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.bracketPairColorization.enabled": true,
-  "git.enableSmartCommit": true
+  "git.enableSmartCommit": true,
+  "editor.inlineSuggest.enabled": true,
+  "vscode-neovim.useWSL": true,
+  "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim"
 }

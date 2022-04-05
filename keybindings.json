@@ -36,24 +36,8 @@
     "key": "shift+alt+9",
     "command": "workbench.action.terminal.focusAtIndex9"
   },
-  {
-    "key": "alt+j",
-    "command": "editor.action.moveLinesDownAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "alt+down",
-    "command": "-editor.action.moveLinesDownAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "alt+k",
-    "command": "editor.action.moveLinesUpAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "alt+up",
-    "command": "-editor.action.moveLinesUpAction",
-    "when": "editorTextFocus && !editorReadonly"
-  }
+
+// Neovim
+  { "key": "alt+j", "command": "vscode-neovim.send", "args": "<a-j>" , "when": "editorTextFocus && neovim.init" },
+  { "key": "alt+k", "command": "vscode-neovim.send", "args": "<a-k>" , "when": "editorTextFocus && neovim.init" }
 ]
