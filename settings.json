@@ -17,12 +17,14 @@
 
   // Workbench
   "workbench.editor.enablePreview": false,
+  "workbench.list.automaticKeyboardNavigation": false,
 
   // Git
   "git.enableSmartCommit": true,
 
   // Vim
-  "vscode-neovim.useWSL": true,
+  "vscode-neovim.neovimExecutablePaths.win32": "C:\\tools\\neovim\\nvim-win64\\bin\\nvim.exe",
+  // "vscode-neovim.useWSL": true,
   "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
 
   // Language specific settings
@@ -41,6 +43,9 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 
   // Emmet
   "emmet.includeLanguages": {
@@ -56,8 +61,7 @@
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "github.copilot.enable": {
     "*": true,
-    "yaml": true,
-    "plaintext": false,
-    "markdown": false
-  }
+  },
+
+  // Other
 }
