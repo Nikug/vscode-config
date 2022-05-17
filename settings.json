@@ -11,20 +11,20 @@
   "editor.inlineSuggest.enabled": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.suggestSelection": "first",
-  
+
   // Colours and theme
   "workbench.colorTheme": "Palenight Theme",
-  
+
   // Workbench
   "workbench.editor.enablePreview": false,
-  
+
   // Git
   "git.enableSmartCommit": true,
-  
+
   // Vim
   "vscode-neovim.useWSL": true,
   "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
-  
+
   // Language specific settings
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -41,7 +41,7 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  
+
   // Emmet
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
@@ -50,8 +50,14 @@
   "emmet.excludeLanguages": ["markdown"],
   "emmet.triggerExpansionOnTab": true,
   "emmet.showSuggestionsAsSnippets": true,
-  
+
   // Terminal
   "terminal.integrated.scrollback": 5000,
-  "terminal.integrated.defaultProfile.windows": "Git Bash"
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": false,
+    "markdown": false
+  }
 }
