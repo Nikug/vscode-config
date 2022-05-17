@@ -23,8 +23,7 @@
   "git.enableSmartCommit": true,
 
   // Vim
-  "vscode-neovim.neovimExecutablePaths.win32": "C:\\tools\\neovim\\nvim-win64\\bin\\nvim.exe",
-  // "vscode-neovim.useWSL": true,
+  "vscode-neovim.useWSL": true,
   "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
 
   // Language specific settings
