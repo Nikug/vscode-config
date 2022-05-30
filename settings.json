@@ -1,7 +1,7 @@
 {
   // Editor configs
   "editor.formatOnSave": true,
-  "editor.fontSize": 17,
+  "editor.fontSize": 18,
   "editor.tabSize": 2,
   "editor.lineNumbers": "on",
   "editor.scrollBeyondLastLine": false,
@@ -11,6 +11,7 @@
   "editor.inlineSuggest.enabled": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.suggestSelection": "first",
+  "editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace",
 
   // Colours and theme
   "workbench.colorTheme": "Palenight Theme",
@@ -64,5 +65,5 @@
   },
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
 }
