@@ -44,6 +44,9 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 
   // Emmet
   "emmet.includeLanguages": {
@@ -57,13 +60,9 @@
   // Terminal
   "terminal.integrated.scrollback": 5000,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "workbench.startupEditor": "none",
+  "github.copilot.enable": {
+    "*": true,
+  },
 
   // Other
-  "azureResourceManagerTools.parameterFiles": {
-    "c:\\users\\nikugrönberg\\documents\\codes\\az204-arm\\azuredeploy.json": "azuredeploy.parameters.json"
-  },
-  "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
 }
