@@ -21,7 +21,7 @@
 		"prefix": "vc",
 		"description": "Create Vue single file component",
 		"body":[
-			"<script>",
+			"<script setup lang=\"ts\">",
 			"",
 			"</script>",
 			"",
