@@ -12,12 +12,10 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.suggestSelection": "first",
   "editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace",
+  "editor.cursorSurroundingLines": 4,
 
   // Colours and theme
-  "workbench.colorTheme": "Palenight Theme",
-
-  // Workbench
-  "workbench.editor.enablePreview": false,
+  "workbench.colorTheme": "Tokyo Night",
   "workbench.list.automaticKeyboardNavigation": false,
 
   // Git
@@ -60,8 +58,15 @@
   "terminal.integrated.scrollback": 5000,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "github.copilot.enable": {
-    "*": true,
+    "*": true
   },
+  
+  // Search
+  "search.smartCase": true,
+  "search.seedOnFocus": true,
 
   // Other
+  "security.workspace.trust.untrustedFiles": "open",
+  "svelte.enable-ts-plugin": true,
+  "search.searchEditor.defaultNumberOfContextLines": 0
 }
