@@ -22,8 +22,9 @@
   "git.enableSmartCommit": true,
 
   // Vim
-  "vscode-neovim.useWSL": true,
-  "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+  //"vscode-neovim.useWSL": true,
+  //"vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+  "vscode-neovim.neovimExecutablePaths.win32": "C:\\tools\\neovim\\nvim-win64\\bin\\nvim.exe",
 
   // Language specific settings
   "[typescriptreact]": {
@@ -60,7 +61,7 @@
   "github.copilot.enable": {
     "*": true
   },
-  
+
   // Search
   "search.smartCase": true,
   "search.seedOnFocus": true,
@@ -68,5 +69,6 @@
   // Other
   "security.workspace.trust.untrustedFiles": "open",
   "svelte.enable-ts-plugin": true,
-  "search.searchEditor.defaultNumberOfContextLines": 0
+  "search.searchEditor.defaultNumberOfContextLines": 0,
+  "workbench.editor.enablePreview": false
 }
