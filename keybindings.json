@@ -37,8 +37,38 @@
     "command": "workbench.action.terminal.focusAtIndex9"
   },
 
-// Neovim
-  { "key": "alt+j", "command": "vscode-neovim.send", "args": "<a-j>" , "when": "editorTextFocus && neovim.init" },
-  { "key": "alt+k", "command": "vscode-neovim.send", "args": "<a-k>" , "when": "editorTextFocus && neovim.init" },
-  { "key": "enter", "command": "search.action.focusNextSearchResult", "when": "inSearchEditor && searchInputBoxFocus"}
+  // Neovim
+  {
+    "key": "alt+j",
+    "command": "vscode-neovim.send",
+    "args": "<a-j>",
+    "when": "editorTextFocus && neovim.init"
+  },
+  {
+    "key": "alt+k",
+    "command": "vscode-neovim.send",
+    "args": "<a-k>",
+    "when": "editorTextFocus && neovim.init"
+  },
+  {
+    "key": "enter",
+    "command": "search.action.focusNextSearchResult",
+    "when": "inSearchEditor && searchInputBoxFocus"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "vscode-neovim.send",
+    "args": "<c-p>",
+    "when": "editorTextFocus && neovim.init"
+  },
+  {
+    "key": "ctrl+shift+p",
+    "command": "vscode-neovim.send",
+    "args": "<c-P>",
+    "when": "editorTextFocus && neovim.init"
+  }
 ]
