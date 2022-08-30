@@ -70,5 +70,6 @@
   "security.workspace.trust.untrustedFiles": "open",
   "svelte.enable-ts-plugin": true,
   "search.searchEditor.defaultNumberOfContextLines": 0,
-  "workbench.editor.enablePreview": false
+  "workbench.editor.enablePreview": false,
+  "redhat.telemetry.enabled": false
 }
