@@ -8,13 +8,12 @@
   "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
   "editor.fontLigatures": true,
-  "workbench.colorTheme": "Tokyo Night",
+  "workbench.colorTheme": "Catppuccin Mocha",
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "liveServer.settings.fullReload": true,
   "editor.bracketPairColorization.enabled": true,
   "git.enableSmartCommit": true,
-  
   // Terminal settings
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.profiles.windows": {
@@ -23,7 +22,6 @@
       "args": []
     }
   },
-
   // Language settings
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -40,7 +38,6 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
   // Emmet settings
   "emmet.extensionsPath": ["C:/Users/nikgro/Documents/repos/emmet"],
   "emmet.includeLanguages": {
@@ -50,51 +47,14 @@
   "emmet.excludeLanguages": ["markdown"],
   "emmet.triggerExpansionOnTab": true,
   "emmet.showSuggestionsAsSnippets": true,
-
   // Vim settings
-  "vim.sneak": true,
-  "vim.sneakReplacesF": true,
+  "vim.sneak": false,
+  "vim.sneakReplacesF": false,
   "vim.useSystemClipboard": false,
   "vim.leader": "<space>",
   "vim.timeout": 30000,
   "vim.scrolloff": 10,
   "vim.normalModeKeyBindings": [
-    // Window controls (w)
-    {
-      // Move focus right
-      "before": ["<leader>", "w", "l"],
-      "after": ["<C-w>", "l"]
-    },
-    {
-      // Move focus left
-      "before": ["<leader>", "w", "h"],
-      "after": ["<C-w>", "h"]
-    },
-    {
-      // Move focus down
-      "before": ["<leader>", "w", "J"],
-      "after": ["<C-w>", "j"]
-    },
-    {
-      // Move focus up
-      "before": ["<leader>", "w", "K"],
-      "after": ["<C-w>", "k"]
-    },
-    {
-      // Split vertical
-      "before": ["<leader>", "w", "v"],
-      "after": ["<C-w>", "v"]
-    },
-    {
-      // Split horizontal
-      "before": ["<leader>", "w", "s"],
-      "after": ["<C-w>", "s"]
-    },
-    {
-      // Close window
-      "before": ["<leader>", "w", "k"],
-      "commands": ["workbench.action.closeEditorsInGroup"]
-    },
     // Tab controls (t)
     {
       // New empty tab
@@ -150,7 +110,7 @@
     {
       // Open search
       "before": ["<leader>", "/"],
-      "commands": ["search.action.openEditor"]
+      "commands": ["workbench.action.quickTextSearch"]
     },
     // Toggling view stuff (v)
     {
@@ -202,7 +162,7 @@
     {
       // Format file
       "before": ["<leader>", "f", "f"],
-      "commands": ["workbench.action.formatDocument"]
+      "commands": ["editor.action.formatDocument"]
     },
     {
       // Lint file
@@ -212,7 +172,7 @@
     // Code (c)
     {
       // Show documentation of symbol
-      "before": ["<leader>", "c", "h"],
+      "before": ["K"],
       "commands": ["editor.action.showHover"]
     },
     {
@@ -221,39 +181,20 @@
       "commands": ["editor.action.quickFix"]
     },
     {
-      // Go to symbol definition
-      "before": ["<leader>", "c", "d"],
-      "commands": ["editor.action.revealDefinition"]
-    },
-    {
-      // Go to symbol implementation
-      "before": ["<leader>", "c", "i"],
-      "commands": ["editor.action.goToImplementation"]
-    },
-    {
-      // Go to symbol references
-      "before": ["<leader>", "c", "r"],
+      "before": ["g", "r"],
       "commands": ["editor.action.goToReferences"]
     },
     {
-      // Go to symbol type definition
-      "before": ["<leader>", "c", "t"],
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["g", "t"],
       "commands": ["editor.action.goToTypeDefinition"]
     },
     {
-      // Peek symbol type definition
-      "before": ["<leader>", "c", "T"],
-      "commands": ["editor.action.peekTypeDefinition"]
-    },
-    {
-      // Go to next symbol highlight
-      "before": ["<leader>", "c", "n"],
-      "commands": ["editor.action.wordHighlight.next"]
-    },
-    {
-      // Go to previous symbol highlight
-      "before": ["<leader>", "c", "N"],
-      "commands": ["editor.action.wordHighlight.prev"]
+      "before": ["g", "d"],
+      "commands": ["editor.action.goToDeclaration"]
     },
     {
       // Rename symbol
@@ -302,8 +243,12 @@
       // Copy to clipboard
       "before": ["<leader>", "s", "c"],
       "after": ["\"", "+", "y"]
-    },
+    }
   ],
   "editor.cursorSurroundingLines": 10,
-  "editor.fontFamily": "'Cascadia Mono', Consolas, 'Courier New', monospace"
+  "editor.fontFamily": "'Cascadia Mono', Consolas, 'Courier New', monospace",
+  "azureFunctions.showProjectWarning": false,
+  "git.openRepositoryInParentFolders": "never",
+  "git.confirmSync": false,
+  "remote.autoForwardPortsSource": "hybrid"
 }

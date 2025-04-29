@@ -1,74 +1,51 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
   {
-    "key": "shift+alt+1",
-    "command": "workbench.action.terminal.focusAtIndex1"
+    "key": "ctrl+n",
+    "command": "goToNextReferenceFromEmbeddedEditor",
+    "when": "vim.active && (inReferenceSearchEditor || referenceSearchVisible)"
   },
   {
-    "key": "shift+alt+2",
-    "command": "workbench.action.terminal.focusAtIndex2"
+    "key": "ctrl+p",
+    "command": "goToPreviousReferenceFromEmbeddedEditor",
+    "when": "vim.active && (inReferenceSearchEditor || referenceSearchVisible)"
   },
   {
-    "key": "shift+alt+3",
-    "command": "workbench.action.terminal.focusAtIndex3"
+    "key": "ctrl+n",
+    "command": "selectNextCodeAction",
+    "when": "vim.active && codeActionMenuVisible"
   },
   {
-    "key": "shift+alt+4",
-    "command": "workbench.action.terminal.focusAtIndex4"
+    "key": "ctrl+p",
+    "command": "selectPrevCodeAction",
+    "when": "vim.active && codeActionMenuVisible"
   },
   {
-    "key": "shift+alt+5",
-    "command": "workbench.action.terminal.focusAtIndex5"
+    "key": "ctrl+n",
+    "command": "workbench.action.quickOpenSelectNext",
+    "when": "vim.active && inQuickOpen"
   },
   {
-    "key": "shift+alt+6",
-    "command": "workbench.action.terminal.focusAtIndex6"
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "vim.active && inQuickOpen"
   },
   {
-    "key": "shift+alt+7",
-    "command": "workbench.action.terminal.focusAtIndex7"
+    "key": "ctrl+n",
+    "command": "workbench.action.files.newUntitledFile",
+    "when": "!vim.active"
   },
   {
-    "key": "shift+alt+8",
-    "command": "workbench.action.terminal.focusAtIndex8"
+    "key": "ctrl+n",
+    "command": "-workbench.action.files.newUntitledFile"
   },
   {
-    "key": "shift+alt+9",
-    "command": "workbench.action.terminal.focusAtIndex9"
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpen",
+    "when": "!vim.active"
   },
   {
-    "key": "alt+j",
-    "command": "editor.action.moveLinesDownAction",
-    "when": "editorTextFocus && !editorReadonly"
+    "key": "ctrl+p",
+    "command": "-workbench.action.quickOpen"
   },
-  {
-    "key": "alt+down",
-    "command": "-editor.action.moveLinesDownAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "alt+k",
-    "command": "editor.action.moveLinesUpAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "alt+up",
-    "command": "-editor.action.moveLinesUpAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "enter",
-    "command": "search.action.focusNextSearchResult",
-    "when": "inSearchEditor && searchInputBoxFocus"
-  },
-  {
-    "key": "f4",
-    "command": "-search.action.focusNextSearchResult",
-    "when": "hasSearchResult || inSearchEditor"
-  },
-  {
-    "key": "escape",
-    "command": "workbench.action.closeActiveEditor",
-    "when": "inSearchEditor && searchInputBoxFocus"
-  }
 ]
