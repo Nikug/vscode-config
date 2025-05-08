@@ -98,6 +98,11 @@
       "commands": ["workbench.action.quickOpen"]
     },
     {
+      // Open recent 
+      "before": ["<leader>", "b"],
+      "commands": ["workbench.action.quickOpenLeastRecentlyUsedEditor"]
+    },
+    {
       // Run command
       "before": ["<leader>", ":"],
       "commands": ["workbench.action.showCommands"]
@@ -198,7 +203,7 @@
     },
     {
       // Rename symbol
-      "before": ["<leader>", "c", "R"],
+      "before": ["<leader>", "c", "r"],
       "commands": ["editor.action.rename"]
     },
     {
